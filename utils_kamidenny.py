@@ -44,26 +44,25 @@ benefits_offered: list = ["Unlimited PTO", "Health Insurance", "Life Insurance",
 employee_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
-# TODO: Replace these variable names with the variable name of your own numeric list
 min_score: float = min(employee_satisfaction_scores)  
 max_score: float = max(employee_satisfaction_scores)  
 mean_score: float = statistics.mean(employee_satisfaction_scores)  
 stdev_score: float = statistics.stdev(employee_satisfaction_scores)
 
 # Use a Python formatted string (f-string) to show information
-# TODO: Modify the text in the byline to fit your information
-# TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
 Stellar Analytics: Delivering Professional Insights
 ---------------------------------------------------------
-Has International Clients:  {has_international_clients}
-Years in Operation:         {years_in_operation}
-Skills Offered:             {skills_offered}
-Client Satisfaction Scores: {client_satisfaction_scores}
-Minimum Satisfaction Score: {min_score}
-Maximum Satisfaction Score: {max_score}
-Mean Satisfaction Score: {mean_score:.2f}
+Skills Offered:               {skills_offered}
+Years in Operation:           {years_in_operation}
+Benefits Offered:             {benefits_offered}
+Offers 401k Matching:         {has_401k_matching}
+Number of Paid Holidays:      {count_of_holidays}
+Employee Satisfaction Scores: {employee_satisfaction_scores}
+Minimum Satisfaction Score:   {min_score}
+Maximum Satisfaction Score:   {max_score}
+Mean Satisfaction Score:      {mean_score:.2f}
 Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
 """
 
